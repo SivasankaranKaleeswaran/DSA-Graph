@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 //https://leetcode.com/problems/surrounded-regions/
 public class SurroundedRegion {
 
@@ -34,13 +36,14 @@ public class SurroundedRegion {
         {
             for(int j=0;j< grid[0].length;j++)
             {
-                if(grid[i][j]=='X' && vis[])
+                if(grid[i][j]=='O' && !vis[i][j])
                 {
-                    count++;
+                    grid[i][j]='X';
                 }
             }
         }
-        System.out.println(count);
+        for(int i=0;i< grid.length;i++)
+         System.out.println(Arrays.toString(grid[i]));
     }
 
     private static void dfs(char grid[][], int row, int col, boolean vis[][]) {
