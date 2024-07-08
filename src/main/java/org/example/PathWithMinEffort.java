@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.PriorityQueue;
 
+//https://leetcode.com/problems/path-with-minimum-effort/description/
 public class PathWithMinEffort {
 
     public static void main(String[] args) {
