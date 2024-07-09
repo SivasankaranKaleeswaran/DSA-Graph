@@ -37,7 +37,7 @@ public class PathWithMinEffort {
             int row=T.row;
             int col=T.col;
 
-            if(row==rowL-1 && col==colL-1) return diff;
+          //  if(row==rowL-1 && col==colL-1) return diff;
             int nrow[]={0,0,-1,1};
             int ncol[]={-1,1,0,0};
             for(int i=0;i<4;i++)
@@ -58,7 +58,7 @@ public class PathWithMinEffort {
 
         }
 
-        return 1;
+        return dis[rowL-1][colL-1];
     }
 
 }
